@@ -1,0 +1,100 @@
+html{
+    font-size: 1vw;
+}
+
+body{
+    text-align: center;
+    margin: 0 auto;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+/* .header_content {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    margin: 0 auto 0.3rem auto;
+}
+
+.header_title {
+    display: flex;
+}
+
+.header_title_img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    opacity: 1;
+    margin: 1.2rem 0.5rem;
+    border-radius: 3rem;
+}
+
+.header_title_sentence {
+    color: white;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin: 1.2rem 0;
+    opacity: 1;
+    padding: 1.6rem 0;
+}
+
+.header_links {
+    width: 60%;
+    padding: 3rem 0 0 0;
+}
+
+.header_links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_links li a:hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+} */
+
+
+.header_2 {
+    width: 100%;
+    height: 5rem;
+    background: #555;
+    /* 背景色を濃いグレーに指定。半透明の「rgba(0,0,0,0.5)」でもいいかも */
+    display: none;
+    /* ページ読み込み時は非表示にする */
+    position: fixed;
+    /* ヘッダーを絶対位置にする。スクロールしても固定 */
+    top: 0;
+    /* 上から0pxに指定 */
+    left: 0;
+    /* 左から0pxに指定 */
+    padding: 10px 20px;
+    /* ちょっと余白をとっとくと綺麗 */
+    box-sizing: border-box;
+    /* paddingを含んで幅100%ちょうどにするため */
+    z-index: 5;
+}
+
+.header_2 p {
+    color: #fff;
+    /* 文字色を白にする */
+}
+
+#header_2 .header_content .header_links {
+    padding: 1.3rem;
+    width: 30rem;
+}
+
+#header_2 .header_content .header_title .header_title_sentence {
+    padding: 0;
+}
+
+#header_2 .header_content .header_title .header_title_img {
+    margin: 0.6rem 0.8rem 0.8rem 0.8rem;
+}

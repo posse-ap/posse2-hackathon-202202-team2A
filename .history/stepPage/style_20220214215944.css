@@ -1,0 +1,182 @@
+html {
+    font-size: 1vw;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.section1 h1 {
+    font-size: 5rem;
+}
+
+.main_big_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main_box1 {
+    width: 50%;
+    border-right: 1rem #563723 solid;
+    padding-top: 10rem;
+}
+
+.main_box2 {
+    width: 50%;
+    border-left: 1rem #563723 solid;
+    padding-top: 10rem;
+}
+
+.section2 {
+    height: 20rem;
+}
+
+.section2 div h2 {
+    font-size: 3rem;
+}
+
+.top_img {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    filter: blur(4px);
+    width: 30%;
+    height: 40%;
+    left: 35%;
+}
+
+
+.box2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 50;
+    width: 30%;
+    height: 40%;
+    left: 35%;
+}
+
+.title {
+    background-image: none;
+    /* font-size: 70px; */
+    font-family: 'HanziPen TC', 'ＭＳ Ｐ明朝', 'MS PMincho', sans-serif;
+    color: white;
+}
+
+.main_box1 img {
+    height: 40%;
+}
+
+
+/* 別のタイムライン */
+@charset "utf-8";
+
+/*========= バー表示のためのCSS ===============*/
+
+/*タイムライン全体の設定*/
+.timeline {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.timeline li {
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+    list-style: none;
+    padding: 0 0 20px 0;
+}
+
+.timeline dl {
+    margin: 0 0 20px 3em;
+}
+
+.timeline dd strong {
+    display: block;
+    padding: 10px 0;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+    position: absolute;
+    left: 0.2em;
+    top: 0;
+    width: 2px;
+    /*線の太さ*/
+    height: 0;
+    /*はじめは高さを0に*/
+    background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #666;
+    border-radius: 50%;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+header {
+    background: #333;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+p, ul {
+    margin-top: 20px;
+}
+
+a {
+    color: #333;
+}
+
+small {
+    background: #333;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+
+section {
+    padding: 30px;
+}
+
+section:first-child {
+    padding: 30px 30px 0px;
+}
+
+section:nth-child(2n) {
+    background: #f3f3f3;
+}
