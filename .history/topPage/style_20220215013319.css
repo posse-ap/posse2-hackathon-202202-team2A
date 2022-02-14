@@ -1,0 +1,426 @@
+html {
+    font-size: 1vw;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+.header_content {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    margin: 0 6rem 0.3rem 1rem;
+}
+
+.header_title {
+    display: flex;
+}
+
+.header_title_img {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    opacity: 1;
+}
+
+
+
+.header_links {
+    width: 27%;
+    padding: 1rem 0 0 0;
+}
+
+.header_links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_links li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.header_links li a:hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+}
+
+
+.header {
+    width: 100%;
+    height: 6rem;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1.1rem;
+    box-sizing: border-box;
+    z-index: 5;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* -------------------- */
+/* header
+  /* -------------------- */
+/* .header {
+    align-items: center;
+    background-color: #1b1310;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    height: 74px;
+    justify-content: space-between;
+    padding: 0 120px;
+} */
+
+/* .nav-list {
+    
+    display: flex;
+} */
+
+/* .nav-item {
+    
+    margin-right: 55px;
+} */
+
+.burger-btn {
+    display: none;
+}
+
+/* ------------------ */
+/* fv
+  /* ------------------ */
+.fv {
+    align-items: center;
+    background-color: #141414;
+    background-image: url(../img/fv-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+}
+
+/* .main-copy {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 34px 42px;
+} */
+
+/* ------------------ */
+/* about
+  /* ------------------ */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.section-wrapper {
+    padding: 100px 10% 50px;
+}
+
+@media screen and (max-width:768px) {
+
+    /* ----------------------- */
+    /* base_sp
+    /* ----------------------- */
+    /* デフォルトのbuttonスタイルをリセット */
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    /* ------------------ */
+    /* humberger-menu */
+    /* ------------------ */
+    .header {
+        padding: 0;
+        height: 15rem;
+    }
+
+    .header_title_img{
+        margin-top: 2rem;
+        width: 30rem;
+        height: 10rem;
+    }
+
+    /* 以下、ハンバーガーボタン */
+    .burger-btn {
+        display: block;
+        height: 20%;
+        position: relative;
+        width: 20%;
+        z-index: 3;
+        /* codepenの挙動のため */
+        background-color: transparent;
+        border: none;
+        margin-top: 6rem;
+    }
+
+    
+
+    .bar {
+        background-color: black;
+        display: block;
+        height: 0.1rem;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 4rem;
+    }
+
+    .bar_top {
+        top: 3rem;
+    }
+
+    .bar_mid {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bar_bottom {
+        bottom: 3rem;
+    }
+
+    .burger-btn.close{
+        margin-top: 8.4rem;
+    }
+
+    .burger-btn.close .bar_top {
+        transform: translate(-50%,-4.3rem) rotate(45deg);
+        transition: transform .3s;
+    }
+
+    .burger-btn.close .bar_mid {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .burger-btn.close .bar_bottom {
+        transform: translate(-50%, -1rem) rotate(-45deg);
+        transition: transform .3s;
+    }
+
+    /* スクロール制御 */
+    .noscroll {
+        overflow: hidden;
+    }
+
+    /* 以下、ハンバーガーメニュー */
+    .nav-wrapper {
+        visibility: hidden;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        opacity: 0;
+        transition: opacity .5s;
+        z-index: 2;
+        /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+    }
+
+    .header-nav {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .nav-list {
+        display: block;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-item {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    /* メニューオープン時 */
+    .nav-wrapper.fade {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ------------------ */
+    /* fv */
+    /* ------------------ */
+    .main-copy {
+        font-size: 30px;
+    }
+
+    /* ------------------ */
+    /* about */
+    /* ------------------ */
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-wrapper {
+        padding: 100px 5% 50px;
+    }
+}
+
+/* ふったー */
+.footer {
+    background-color: grey;
+    opacity: 0.7;
+}
+
+.footer_box {
+    width: 75%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0 0 0;
+    position: relative;
+    right: -23%;
+    margin-top: 20rem;
+}
+
+.footer_official_box label p {
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.footer_official_box label p:hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+}
+
+.footer_page_in_site a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.footer_page_in_site a:hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+}
+
+.SNS {
+    width: 14%;
+}
+
+.SNS_box a {
+    margin: 1rem;
+}
+
+.SNS_box a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.SNS_box a :hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+}
+
+.SNS p {
+    color: black;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    letter-spacing: 0.3rem;
+}
+
+/* .SNS p:hover {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+} */
+
+.posse_logo_footer {
+    width: 80%;
+    height: 40%;
+}
+
+.footer_other_box {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin: 2rem;
+}
+
+.footer_page_in_site a {
+    margin: 0 1rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .footer_box {
+        display: block;
+        height: 20rem;
+        margin:  20rem 0;
+        right: -5%;
+        width: 90%;
+    }
+
+    .footer_official_box label p{
+        font-size: 10rem;
+    }
+
+    .footer_page_in_site a{
+        font-size: 4rem;
+        display: block;
+    }
+
+    .footer_page_in_site1{
+        display: block;
+    }
+
+    .footer{
+        height: 70rem;
+    }
+
+    .SNS{
+        margin: 0 auto;
+    }
+
+    .SNS p{
+        width: 50rem;
+        ma
+        font-size: 5rem;
+    }
+}
