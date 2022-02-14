@@ -318,7 +318,7 @@ h3 {
 }
 
 
-/* content  */
+/* トップビュー */
 
 .hero_cont {
     display: flex;
@@ -343,6 +343,7 @@ h3 {
 }
 
 .hero_content {
+    width: 30%;
     background-color: #fff;
     position: absolute;
     top: 30%;
@@ -414,6 +415,86 @@ h3 {
     height: 100vh;
     z-index: -1;
 }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+    .hero_cont {
+        justify-content: center;
+        position: relative;
+    }
+    
+    .hero {
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .hero_main {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .hero_content {
+        width: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        padding: 3%;
+    }
+
+    .scroll {
+        height: 7vh;
+        width: 4vw;
+    }
+    
+}
+
+@media screen and (max-width:540px) {
+    .hero_cont {
+        display: block;
+        position: relative;
+    }
+    
+    .hero {
+        width: 95% !important;
+        height: 95% !important;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .hero_main {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .hero_content {
+        width: 80%;
+        height: 30%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        padding: 7%;
+        box-sizing: border-box;
+    }
+
+    .hero_headline {
+        font-size: 6rem;
+        color: #000;
+        text-align: center;
+    }
+
+    .scroll {
+        height: 5vh;
+        width: 5vw;
+    }   
+}
+
+
 
 /* ふったー */
 .footer {
