@@ -1,0 +1,29 @@
+html{
+    font-size: 1vw;
+}
+
+body{
+    text-align: center;
+    margin: 0 auto;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+.cd-timeline {
+    overflow: hidden;
+    padding: var(--space-lg) 0;
+  }
+  
+  .cd-timeline__container {
+    position: relative;
+    padding: var(--space-md) 0;
+  
+    &::before { // this is the timeline vertical line
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      height: 100%;
+      width: 4px;
+      background: var(--cd-color-2);
+    }
+  }
