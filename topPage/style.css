@@ -51,11 +51,18 @@ body {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 50px;
 }
 
 .header_links li a:hover {
     opacity: 0.4;
     transform: translate(0, -5px);
+}
+
+.header_links li.active a {
+    background: #008035;
+    color: #fff;
 }
 
 
@@ -315,7 +322,7 @@ h3 {
     padding-top: 5rem;
     justify-content: end;
     align-items: center;
-    background-color: lightgreen;
+    background-color: #bcd5ac;
 }
 
 .top_image {
@@ -327,9 +334,8 @@ h3 {
 
 .top_image img {
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover; 
-    
     border-radius: 10px;
 }
 
@@ -437,66 +443,166 @@ h3 {
 }
 
 @media screen and (max-width:540px) {
-    .top_section {
-        display: block;
-        position: relative;
-    }
-    
-    .top_image {
-        width: 95% !important;
-        height: 95% !important;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .top_image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .top_content {
-        width: 80%;
-        height: 30%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) !important;
-        padding: 7%;
-        box-sizing: border-box;
-    }
-
-    .top_headline {
-        font-size: 6rem;
-        color: #000;
-        text-align: center;
-    }
-
-    .scroll {
-        height: 4vh;
-        width: 4vw;
-        border: 2px solid black;
-        margin: 0 auto;
-        border-radius: 30vw;
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
         cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    /* ------------------ */
+    /* humberger-menu */
+    /* ------------------ */
+    .header {
+        padding: 0;
+        height: 15rem;
         position: relative;
     }
 
-    .scroll::before, .scroll::after {
-        content: "";
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        border: 2px solid black;
-        height: 8px;
-        width: 8px;
-        transform: translate(-50%, -50%) rotate(45deg);
-        border-top: transparent;
-        border-left: transparent;
-        animation: scroll 1s ease-in-out infinite;
+    .header_title_img{
+        margin-top: 2rem;
+        width: 30rem;
+        height: 10rem;
     }
 
+    /* 以下、ハンバーガーボタン */
+    .burger-btn {
+        display: block;
+        height: 22%;
+        position: relative;
+        width: 20%;
+        z-index: 3;
+        /* codepenの挙動のため */
+        background-color: transparent;
+        border: none;
+        margin-top: 5rem;
+    }
+
+    
+
+    .bar {
+        background-color: black;
+        display: block;
+        height: 0.1rem;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 7rem;
+    }
+
+    .bar_top {
+        top: 3rem;
+    }
+
+    .bar_mid {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bar_bottom {
+        bottom: 3rem;
+    }
+
+    .burger-btn.close{
+        margin-top: 8.4rem;
+    }
+
+    .burger-btn.close .bar_top {
+        transform: translate(-50%,-4.3rem) rotate(45deg);
+        transition: transform .3s;
+    }
+
+    .burger-btn.close .bar_mid {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .burger-btn.close .bar_bottom {
+        transform: translate(-50%, -1rem) rotate(-45deg);
+        transition: transform .3s;
+    }
+
+    /* スクロール制御 */
+    .noscroll {
+        overflow: hidden;
+    }
+
+    /* 以下、ハンバーガーメニュー */
+    .nav-wrapper {
+        visibility: hidden;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        opacity: 0;
+        transition: opacity .5s;
+        z-index: 2;
+        /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+    }
+
+    .header-nav {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .header_links ul{
+        display: block;
+    }
+
+    .nav-list {
+        display: block;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-item {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    .header_links li a{
+        font-size: 5rem;
+    }
+
+    /* メニューオープン時 */
+    .nav-wrapper.fade {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ------------------ */
+    /* fv */
+    /* ------------------ */
+    .main-copy {
+        font-size: 30px;
+    }
+
+    /* ------------------ */
+    /* about */
+    /* ------------------ */
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-wrapper {
+        padding: 100px 5% 50px;
+    }
 }
 
 
@@ -894,115 +1000,6 @@ a.btn--limegreen.btn--cubic:hover {
     transform: rotate(135deg);
 }
 
-html {
-    font-size: 1vw;
-}
-
-body {
-    text-align: center;
-    margin: 0 auto;
-    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-}
-
-.header_content {
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    opacity: 1;
-    padding: 0.4rem 6rem 0.3rem 1rem;
-}
-
-.header_title {
-    display: flex;
-}
-
-.header_title_img {
-    display: block;
-    width: 12rem;
-    height: 4rem;
-    opacity: 1;
-}
-
-
-
-.header_links {
-    width: 40%;
-    padding: 1rem 0 0 0;
-}
-
-.header_links ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header_links li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    font-size: 1.7rem;
-}
-
-.header_links li a:hover {
-    opacity: 0.4;
-    transform: translate(0, -5px);
-}
-
-
-.header {
-    width: 100%;
-    height: 5rem;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* padding-top: 1.1rem; */
-    box-sizing: border-box;
-    z-index: 100;
-    
-    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
-}
-
-.header_content {
-    box-sizing: border-box;
-}
-
-.SNS_box {
-    width: 150%;
-}
-
-
-.burger-btn {
-    display: none;
-}
-
-.fv {
-    align-items: center;
-    background-color: #141414;
-    background-image: url(../img/fv-bgi@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    justify-content: center;
-}
-
-
-.section-title {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: .05em;
-    margin-bottom: 70px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    letter-spacing: .1em;
-    line-height: 2;
-    margin-bottom: 40px;
-}
 
 @media screen and (min-width:541px) and (max-width:1024px) { 
 }
@@ -1369,7 +1366,7 @@ a.btn--limegreen.btn--cubic:hover{
 .compare_box1, .compare_box2, .compare_box3, .compare_box4 {
     width: 20vw;
     margin: 3vh auto;
-    background: #dbffdb;
+    background: #bcd5ac;
     padding: 1%;
     text-align: center;
     font-weight: 900;
@@ -1406,9 +1403,9 @@ a.btn--limegreen.btn--cubic:hover{
 }
 
 .compare_box1:before, .compare_box3:before {
-    border-left: 1vw solid #dbffdb;
+    border-left: 1vw solid #bcd5ac;
     border-right: 1vw solid transparent;
-    border-top: 1vw solid #dbffdb;
+    border-top: 1vw solid #bcd5ac;
     border-bottom: 1vw solid transparent;
     right: -1.5vw;
     top: 1vh;
@@ -1416,8 +1413,8 @@ a.btn--limegreen.btn--cubic:hover{
 
 .compare_box2:before, .compare_box4:before {
     border-left: 1vw solid transparent;
-    border-right: 1vw solid #dbffdb;
-    border-top: 1vw solid #dbffdb;
+    border-right: 1vw solid #bcd5ac;
+    border-top: 1vw solid #bcd5ac;
     border-bottom: 1vw solid transparent;
     left: -1.5vw;
     top: 1vh;
@@ -1441,7 +1438,7 @@ a.btn--limegreen.btn--cubic:hover{
     /* border: 1px solid green; */
     /* border-radius: 10px; */
     padding: 2%;
-    background-color: #dbffdb;
+    background-color: #bcd5ac;
 }
 
 .compare_table td {
@@ -1455,6 +1452,10 @@ a.btn--limegreen.btn--cubic:hover{
 
 .compare_table tr:nth-of-type(odd) {
     background-color: #f3f3f3;
+}
+
+.compare_table tr:nth-of-type(even) {
+    background-color: #a9a9a9;
 }
 
 

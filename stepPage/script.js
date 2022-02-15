@@ -1,3 +1,8 @@
+// NAV の色変更
+$(document).on('click', 'ul li', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+})
+
 //線が伸びるための設定を関数でまとめる
 function ScrollTimelineAnime(){
     $('.timeline li').each(function(){// それぞれのli要素の

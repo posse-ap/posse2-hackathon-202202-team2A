@@ -50,11 +50,18 @@ body{
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 50px;
 }
 
 .header_links li a:hover {
     opacity: 0.4;
     transform: translate(0, -5px);
+}
+
+.header_links li.active a {
+    background: #008035;
+    color: #fff;
 }
 
 
@@ -111,7 +118,6 @@ h3 {
     font-weight: bold;
     letter-spacing: .1em;
     line-height: 2;
-    margin-bottom: 40px;
 }
 
 .section-wrapper {
@@ -315,7 +321,7 @@ h3 {
     padding-top: 5rem;
     justify-content: end;
     align-items: center;
-    background-color: lightgreen;
+    background-color: #bcd5ac;
 }
 
 .top_image {
@@ -475,12 +481,158 @@ h3 {
     }
 }
 
+/* 見出し */
+
+
+/* timeline */
+
+.intro_section {
+    padding-top: 5%;
+    /* background-color: #bcd5ac; */
+}
+
+.intro_section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+        /* background-color: #bcd5ac; */
+
+}
+
+/* .intro_header  */
+
+
+.intro_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.intro_timeline {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro_card {
+    position: relative;
+    max-width: 100%;
+}
+
+/* padding を左か右かによって分けてる */
+.intro_card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+}
+.intro_card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+}
+
+/* 線  */
+.intro_card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid #000;
+}
+
+.intro_card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+
+.intro_card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+
+.intro_card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+
+.intro_card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.intro_card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.intro_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #bcd5ac;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kuizy {
+    width: 80%;
+    margin-left: 1vw;
+}
+
+.webapp {
+    margin-left: 1vw;
+}
+
+
+.intro_info p {
+    margin: 3vh 1vw;
+}
+
+
+
+.intro_title {
+    color: green;
+    position: relative;
+}
+
+
+.intro_title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid #000;
+}
+
+.intro_card:nth-child(even) > .intro_info > .intro_title {
+    text-align: right;
+}
+
+
+.intro_card:nth-child(odd) > .intro_info > .intro_title::before {
+    left: -45px;
+}
+
+
+.intro_card:nth-child(even) > .intro_info > .intro_title::before {
+    right: -45px;
+}
 
 /* game  */
 
 .container {
-    margin-top: 10000px;
+    margin: 0;
+    padding: 5vh 0;
     display: flex;
+    background-color: #bcd5ac;
 }
 
 .memory_game {
