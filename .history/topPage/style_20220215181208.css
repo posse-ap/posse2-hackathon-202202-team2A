@@ -1828,7 +1828,6 @@ a.btn--limegreen.btn--cubic:hover{
     font-size: 5rem;
     line-height: 7rem;
 }
-}
 
 .split_content {
     width: 44%;
@@ -1847,7 +1846,7 @@ a.btn--limegreen.btn--cubic:hover{
     font-size: 3rem;
     padding: 0.5em;/*文字周りの余白*/
 }
-
+}
 
 .split_content p {
     font-size: 1.5rem;

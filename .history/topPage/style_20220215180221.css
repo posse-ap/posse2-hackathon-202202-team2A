@@ -207,7 +207,7 @@ body {
     height: 91rem;
 }
 
-
+/* こんふりくと */
 .intro_section_introduction {
     background-color: rgb(241, 237, 237);
     height: 100rem;
@@ -379,13 +379,23 @@ a.btn--limegreen.btn--cubic:hover {
         border-bottom: 1rem solid rgb(1, 122, 37);
         position: relative;
     }
+
+    /* .section_question{
+        top: 73%;
+    }
+
+    .scroll2 {
+        top: 80%;
+    }  */
 }
 
 @media screen and (max-width:540px) {
     a.btn-c {
         top: 150rem;
     }
+
 }
+
 
 .other_section_card:hover img {
     opacity: 0.6;
@@ -972,6 +982,7 @@ a.btn--limegreen.btn--cubic {
 a.btn--limegreen.btn--cubic:hover{
     border: 0px;
 }
+
 
 
 @media screen and (min-width:541px) and (max-width:1024px) { 
@@ -1827,7 +1838,6 @@ a.btn--limegreen.btn--cubic:hover{
     .section5 div p{
     font-size: 5rem;
     line-height: 7rem;
-}
 }
 
 .split_content {

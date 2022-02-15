@@ -207,7 +207,7 @@ body {
     height: 91rem;
 }
 
-
+/* こんふりくと */
 .intro_section_introduction {
     background-color: rgb(241, 237, 237);
     height: 100rem;
@@ -379,13 +379,90 @@ a.btn--limegreen.btn--cubic:hover {
         border-bottom: 1rem solid rgb(1, 122, 37);
         position: relative;
     }
+
+    /* .section_question{
+        top: 73%;
+    }
+
+    .scroll2 {
+        top: 80%;
+    }  */
 }
 
 @media screen and (max-width:540px) {
     a.btn-c {
         top: 150rem;
     }
+
 }
+    /* .btn{
+        width: 70%;
+    }
+
+    a.btn--limegreen.btn--cubic {
+        position: relative;
+        top: 140rem;
+        border-bottom: 7px solid rgb(1, 122, 37);
+        padding: 2rem 5rem;
+        font-size: 3rem;
+    }
+
+    .btn:hover{
+        background-color: #FFA500;
+    }
+
+    .btn:hover{
+        background-color: #FFA500;
+        width: 40vw;
+        height: 6.8rem;
+    }
+
+
+    .section_question{
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+.section3 {
+    padding: 2rem 0;
+    width: 100%;
+    height: 50rem;
+    background-color: #f6ff5f;
+}
+
+.section3_cards {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3_card {
+    width: 30%;
+    cursor: pointer;
+}
+
+.section3_card img {
+    width: 75%;
+    height: 20rem;
+    border-radius: 30rem;
+}
+
+.section3_card:hover h3 {
+    opacity: 0.4;
+    transform: translate(0, -5px);
+}
+
+/* .section3_card h3::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 4rem;
+    height: 0.1rem;
+    background-color: #16af2b;
+    left: 27%;
+} */
 
 .other_section_card:hover img {
     opacity: 0.6;
@@ -411,6 +488,40 @@ a.btn--limegreen.btn--cubic:hover {
 }
 
 
+
+@media screen and (max-width:540px) {
+    .other_section {
+        padding: 1rem 0;
+        width: 100%;
+        height: 100rem;
+        background-color: #f6ff5f;
+    }
+
+    .other_section h2 {
+        font-size: 5rem;
+        margin: 4rem;
+    }
+
+    .other_section p {
+        font-size: 5rem;
+        margin: 3rem;
+        line-height: 8rem;
+    }
+
+    .other_section_card img {
+        width: 100%;
+        height: 25rem;
+        border-radius: 30rem;
+    }
+
+    .other_section_card h3 {
+        text-align: center;
+        font-size: 4rem;
+        margin: 3rem 1rem 1rem 1rem;
+        line-height: 3.3rem;
+        white-space: nowrap;
+    }
+}
 
 /* ABOUT SECTION */
 
@@ -913,6 +1024,12 @@ h3 {
     font-size: 3rem;
     margin: 4rem;
 }
+/* 
+.section div p {
+    font-size: 1.8rem;
+    margin: 3rem;
+    line-height: 3.3rem;
+} */
 
 
 .highlight {
@@ -974,6 +1091,10 @@ a.btn--limegreen.btn--cubic:hover{
 }
 
 
+/* @media screen and (min-width:541px) and (max-width:1024px) { 
+
+} */
+
 @media screen and (min-width:541px) and (max-width:1024px) { 
     a.btn-c{
         top: 85rem;
@@ -1025,7 +1146,7 @@ a.btn--limegreen.btn--cubic:hover{
     border-radius: 30rem;
 }
 
-.other_section_card:hover h3 {
+.section_card:hover h3 {
     opacity: 0.4;
     transform: translate(0, -5px);
 }
@@ -1040,66 +1161,28 @@ a.btn--limegreen.btn--cubic:hover{
     left: 27%;
 } */
 
-.other_section_card:hover img {
+.section3_card:hover img {
     opacity: 0.6;
     /* transition-duration: 0.1s; */
 }
 
-.other_section h2 {
+.section3 h2 {
     font-size: 3rem;
     margin: 4rem;
 }
 
-.other_section p {
+.section3 p {
     font-size: 1.8rem;
     margin: 3rem;
     line-height: 3.3rem;
 }
 
-.other_section_card h3 {
+.section3_card h3 {
     text-align: center;
     font-size: 1.8rem;
     margin: 1rem;
     line-height: 3.3rem;
 }
-
-
-
-@media screen and (max-width:540px) {
-    .other_section {
-        padding: 1rem 0;
-        width: 100%;
-        height: 100rem;
-        background-color: #f6ff5f;
-    }
-
-    .other_section h2 {
-        font-size: 5rem;
-        margin: 4rem;
-    }
-
-    .other_section p {
-        font-size: 5rem;
-        margin: 3rem;
-        line-height: 8rem;
-    }
-
-    .other_section_card img {
-        width: 100%;
-        height: 25rem;
-        border-radius: 30rem;
-    }
-
-    .other_section_card h3 {
-        text-align: center;
-        font-size: 4rem;
-        margin: 3rem 1rem 1rem 1rem;
-        line-height: 3.3rem;
-        white-space: nowrap;
-    }
-}
-
-
 
 /* section4  */
 
@@ -1269,7 +1352,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 @media screen and (max-width:540px) {
     .compare_section {
-        height: 50vh;
+        height: 46vh;
     }
 
     .compare_table {
@@ -1319,14 +1402,6 @@ a.btn--limegreen.btn--cubic:hover{
         right: 50%;
         transform: translateX(50%);
         top: 160%;
-    }
-
-    .compare_title{
-        font-size: 7rem;
-    }
-
-    .compare_data div{
-        font-size: 5rem;
     }
 }
 
@@ -1824,10 +1899,6 @@ a.btn--limegreen.btn--cubic:hover{
         height: 150rem;
     }
 
-    .section5 div p{
-    font-size: 5rem;
-    line-height: 7rem;
-}
 }
 
 .split_content {
