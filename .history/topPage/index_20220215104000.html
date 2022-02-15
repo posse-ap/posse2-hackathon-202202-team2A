@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/topPage/style.css" />
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header_content">
+            <div class="header_title">
+                <img src="/topPage images/S__31211608.jpg" alt="" class="header_title_img">
+            </div>
+            <!-- ①サイトタイトル -->
+            <div class="nav-wrapper header_links">
+                <!-- ②ナビゲーションメニュー -->
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/topPage/index.html">トップ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/stepPage/index.html">歩み</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/productionPage/index.html">制作物</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/freePage/index.html">インタビュー</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="burger-btn">
+                <!-- ③ハンバーガーボタン -->
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero_cont">
+        <div class="hero">
+            <img class="hero_main" src="/topPage images/test.jpg" alt="">
+        </div>
+        <div class="hero_content">
+            <h1 class="hero_headline">作り上げる喜びをともに。</h1>
+            <img class="hero_logo" src="/topPage images/logo.PNG" alt="">
+            <div class="scroll"></div>
+        </div>
+    </section>
+    <div class="slider"></div>
+
+    <section class="intro_section">
+        <div class="intro_section_back"><img src="data:image/jpeg;base64,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" alt=""></div>
+        <div class="intro_section_introduction">
+            <h2>これからPOSSE生活を送る大学一・二年生へ</h2>
+        <p>POSSE入学おめでとう！</p>
+        <p>コロナ禍でも充実した学生生活が送れるかな…<br>
+            本音で語り合える仲間がほしい<br>
+            プログラミングの学習に挫折しないか不安…<br>
+            </p>
+        <p>など、新しいコミュニティに入る不安いっぱいだと思います。<br>
+            だからこそ、POSSE②に入ってほしい！！！！
+            </p>
+        <p>POSSE②は2021年に<br class="br">大学一年生を中心に立ち上げられた<br>POSSE内の新しいコミュニティです</p>
+        <p> POSSE②には<br class="br">プログラミングの勉強も<br class="br">コミュニティ運営も<br>頑張りたい仲間がそろっています。</p>
+        <p>運営経験豊富で、意欲がある、距離が近く親身に相談できる上級生のもとで<br>プログラミングを学んでみませんか。</p>
+        </div>
+
+        <div class="line-add-container">
+        <a class="btn btn-c btn--limegreen btn--cubic" href="https://docs.google.com/forms/d/1ORyh9wI3Cvl8ZOhT9qvZ0fhUsKa84D5LCKIpqRM9Kww/edit?usp=sharing">"POSSE②希望フォームは"<span>こちら</span></a>
+        </div>
+        <div class="scroll scroll2"></div>
+        <p class="section_question">そもそもPOSSEって何?</p>
+    </section>
+
+    <section class="section2">
+        <h2>POSSEとは？</h2>
+        <div class="section2_content">
+            <img src="/topPage images/両輪.png" alt="">
+            <p>「POSSE(ポッセ)」とはプログラミングと人格にフォーカスした<br>プログラミング学習コミュニティです。<br>
+                プロのエンジニアが作成したカリキュラムをもとに、<br>未経験からチーム学習・チーム開発を行い技術の習得と実践経験を積んでいきます。<br>
+                さらに、ワークショップなどを通して人格について議論し、<br>「なぜそう思うのか？」と考えを深掘りすることで、人格成長を目指します。
+            </p>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="section4_content1">
+            <h2>POSSEに入ったのはいいけど、POSSE②って...？</h2>
+            <p>POSSEにはPOSSE①とPOSSE②があります。もともとPOSSEは一つしかなかったのですが、昨年2.0期生の数人が独立し、POSSE②を立ち上げました。
+            </p>
+        </div>
+        <div class="section4_content2">
+            <h2>なぜ分かれたの？</h2>
+            <p>人数が多くなると、機会が減ってしまう。
+                POSSEを機会提供の場にしたいという理念から一つのPOSSEに人数制限を設け、上限に達したら新しいPOSSEグループを分けることになりました。
+                </p>
+        </div>
+    </section>
+
+        <section class="section3">
+            <h2>POSSEとは</h2>
+            <p>常に挑戦し続ける私たちのことを<br>
+                より深く知ってもらうために。</p>
+            <div class="section3_cards">
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>歩み</h3>
+                </div>
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>制作物</h3>
+                </div>
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>インタビュー</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+            <h2>よくある質問にクイズ形式で答えるよ</h2>
+            <div id="section_quiz">
+            </div>
+            <div>
+                <p> 上記のようなクイズならPOSSE入学後2ヶ月以内には作れるようになるよ！！！</p>
+            </div>
+        </section>
+
+
+    <footer class="footer">
+        <div class='footer_box'>
+            <div class="footer_box1">
+                <div class='footer_official_box'>
+                    <label for="logo"><p>POSSE</p></label>
+                    <!-- <a id='logo'  href="https://posse.anti-pattern.co.jp/"><img class='posse_logo_footer' src="img\posseLogo.png" alt="ポッセロゴ"></a> -->
+                </div>
+                <div class='footer_other_box'>
+                    <div class='footer_page_in_site'>
+                        <a href="/topPage/index.html">トップ</a>
+                        <a href="/stepPage/index.html">歩み</a>
+                        <a href="/productionPage/index.html">制作物</a>
+                        <a href="/freePage/index.html">インタビュー</a>
+                    </div>
+                </div>
+            </div>
+            <div class='SNS'>
+                <p>各種ＳＮＳ</p>
+                <div class='SNS_box'>
+                    <a href=""><img src="/topPage images/LINE.png" alt=""></a>
+                    <a href="https://instagram.com/posse_programming?utm_medium=copy_link"><img src="/topPage images/instagram2.png" alt="instagram"></a>
+                    <a href="https://twitter.com/posse_program?s=20"><img src="/topPage images/twitter2.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/topPage/script.js"></script>
+</body>
+
+</html>

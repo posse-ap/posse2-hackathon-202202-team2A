@@ -47,13 +47,7 @@ let No2Selection = ['かめいど','かめど','かめと']
 let No3Selection = ['こうじまち','かゆまち','おかとまち']
 let No4Selection = ['おなりもん','おかどもん','ごせいもん']
 let No5Selection = ['とどりき','たたら','たたりき']
-let No6Selection = ['しゃくじい','せきこうい','いじい']
-let No7Selection = ['ぞうしき','ざっしき','ざっしょく']
-let No8Selection = ['おかちまち','みとちょう','ごしろちょう']
-let No9Selection = ['ししぼね','ろっこつ','しこね']
-let No10Selection= ['こぐれ','こばく','こしゃく']
-let Selections   = [No1Selection,No2Selection,No3Selection,No4Selection,No5Selection,
-                    No6Selection,No7Selection,No8Selection,No9Selection,No10Selection]
+let Selections   = [No1Selection,No2Selection,No3Selection,No4Selection,No5Selection]
 
 
 
@@ -61,7 +55,7 @@ let Selections   = [No1Selection,No2Selection,No3Selection,No4Selection,No5Selec
 let button = ['0','1','2']
 
 // 本文
-for(let count = 0; count < 5; count++){
+for(let count = 0; count < 3; count++){
     for(i = button.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var tmp = button[i];
