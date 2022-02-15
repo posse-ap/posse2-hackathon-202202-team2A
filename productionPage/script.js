@@ -1,3 +1,8 @@
+// NAV の色変更
+$(document).on('click', 'ul li', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+})
+
 const cards = document.querySelectorAll('.memory_card');
 
 let has_flipped_card = false;
