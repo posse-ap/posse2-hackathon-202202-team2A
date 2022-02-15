@@ -12,41 +12,45 @@ body {
 
 /* トップビュー */
 
-.hero_cont {
+.top_section {
     display: flex;
     height: 100vh;
-    padding-top: 3rem;
+    padding-top: 5rem;
     justify-content: end;
     align-items: center;
     background-color: lightgreen;
 }
 
-.hero {
+.top_image {
     /* height: 80%; */
     width: 100%;
     padding: 0;
     margin-right: 2vw;
 }
 
-.hero_main {
+.top_image img {
     width: 100%;
     height: 90%;
     object-fit: cover; 
 }
 
-.hero_content {
+.top_content {
     width: 30%;
     background-color: #fff;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 10%;
     padding: 3%;
 }
 
-.hero_headline {
+.top_headline {
     font-size: 2rem;
     color: #000;
     text-align: center;
+}
+
+.top_logo {
+    width: 100%;
 }
 
 
@@ -95,38 +99,34 @@ body {
     }
 }
 
-.hero_logo {
-    width: 100%;
-}
-
-.slider {
+/* .slider {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: -1;
-}
+} */
 
 @media screen and (min-width:541px) and (max-width:1024px) {
-    .hero_cont {
+    .top_section {
         justify-content: center;
         position: relative;
     }
     
-    .hero {
+    .top_image {
         width: 100%;
         padding: 0;
         margin-right: 0;
     }
 
-    .hero_main {
+    .top_image img {
         width: 100%;
         height: 100%;
         object-fit: cover; 
     }
 
-    .hero_content {
+    .top_content {
         width: 50%;
         background-color: #fff;
         position: absolute;
@@ -136,33 +136,29 @@ body {
         padding: 3%;
     }
 
-    .scroll {
-        height: 7vh;
-        width: 4vw;
-    }
     
 }
 
 @media screen and (max-width:540px) {
-    .hero_cont {
+    .top_section {
         display: block;
         position: relative;
     }
     
-    .hero {
+    .top_image {
         width: 95% !important;
         height: 95% !important;
         padding: 0;
         margin: 0 auto;
     }
 
-    .hero_main {
+    .top_image img {
         width: 100%;
         height: 100%;
         object-fit: cover; 
     }
 
-    .hero_content {
+    .top_content {
         width: 80%;
         height: 30%;
         background-color: #fff;
@@ -174,16 +170,12 @@ body {
         box-sizing: border-box;
     }
 
-    .hero_headline {
+    .top_headline {
         font-size: 6rem;
         color: #000;
         text-align: center;
     }
 
-    .scroll {
-        height: 5vh;
-        width: 5vw;
-    }   
 }
 
 
@@ -228,7 +220,7 @@ body {
     }
 
 .section_introduction{
-    padding: 6rem 0 0 0;
+    padding: 4rem 0 0 0;
     height: 130rem;
     background-color: rgb(241, 237, 237);
     padding: 3rem;
@@ -312,7 +304,7 @@ a.btn--limegreen.btn--cubic {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    height: 5rem;
+    height: 1rem;
 }
 
 .btn:hover{
@@ -338,7 +330,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 @media screen and (min-width:541px) and (max-width:1024px) { 
     .scroll2 {
-        top: -12%;
+        top: -14%;
     }
 }
 
@@ -471,22 +463,55 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
-.section2{
-    height: 200%;
+/* ABOUT SECTION */
+
+.about_section {
+    height: 100%;
     background-color: #BCD5AC;
     padding: 2rem 0;
 }
 
-.section2_content{
-    height: 100%;
+
+.about_flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.section2_content img{
+.about_image {
+    /* height: 80%; */
     width: 50%;
+    padding: 0;
+    margin-left: 2vw;
+}
+
+.about_image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover; 
+}
+
+.about_content {
+    width: 44%;
+    margin-left: 1vw;
+
+    /* padding: 3%; */
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+}
+
+.about_content h1 {
+    /* font-size: 2rem;
+    color: #000;
+    text-align: center; */
+    display: inline-block;
+    font-size: 3rem;
+    margin: 2rem auto;
+    padding: 0.5em;/*文字周りの余白*/
 }
 
 
-.section2 p {
+.about_content p {
     font-size: 1.5rem;
     color: black;
     text-align: center;
@@ -494,28 +519,25 @@ a.btn--limegreen.btn--cubic:hover{
     margin: 2rem 0;
 }
 
-.section2 h2 {
-    font-size: 3rem;
-    margin: 4rem;
-}
+
 
 @media screen and (min-width:541px) and (max-width:1024px) { 
 }
 
 @media screen and (max-width:540px) {
-    .section2 {
+    .about_section {
         padding: 1rem 0;
         width: 100%;
         height: 100rem;
         background-color: #f6ff5f;
     }
 
-    .section2 h2 {
+    .about_section h2 {
         font-size: 5rem;
         margin: 4rem;
     }
 
-    .sectio2 p {
+    .about_content p {
         font-size: 5rem;
         margin: 3rem;
         line-height: 8rem;
@@ -542,7 +564,6 @@ body{
     justify-content: space-between;
     opacity: 1;
     padding: 0.4rem 6rem 0.3rem 1rem;
-    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .header_title {
@@ -591,6 +612,8 @@ body{
     /* padding-top: 1.1rem; */
     box-sizing: border-box;
     z-index: 100;
+    
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .header_content{
@@ -901,8 +924,8 @@ h3 {
 } */
 
 .posse_logo_footer {
-    width: 80%;
-    height: 40%;
+    width: 60%;
+    height: 20%;
 }
 
 .footer_other_box {
@@ -1035,10 +1058,10 @@ h3 {
 }
 
 /* クイズ */
-.question{
+/* .question{ */
     /* font-size: 17px; */
     /* font-weight: 1000; */
-}
+/* } */
 
 .question p{
     font-size: 2.5rem;
