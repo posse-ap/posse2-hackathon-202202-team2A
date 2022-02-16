@@ -822,11 +822,7 @@ main {
 }
 
 .step_content img{
-    border-radius: 10px;
-}
-
-.timeline li div img {
-    border-radius: 10px;
+    bo
 }
 
 #step_img0{
@@ -844,7 +840,6 @@ main {
     /* height: 100%; */
     padding: 1.5rem 0;
     box-sizing: border-box;
-    border-radius: 10px;
 }
 
 .step_sentence h1{

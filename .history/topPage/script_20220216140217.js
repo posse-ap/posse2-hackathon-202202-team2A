@@ -105,11 +105,11 @@ for(let count = 0; count < 3; count++){
         '<button onclick="Judgment('+count+','+button[2]+')" class= "before" id="No' + (count+1) +'Answer'+button[2]+'"><div id="No'+(count+1)+button[2]+'"></div></button><br>' +
         '<div class="nothing" id="No' +(count+1)+'CommentBlue">' + 
             '<span class="blue-line">正解！</span><br>' +
-            `<div id="No' +(count+1)+'CommentTrue">${comment[count]}</div>` +
+            `<div id="No' +(count+1)+'CommentTrue"></div>' +
         '</div>' +
         '<div class="nothing" id="No' +(count+1)+'CommentRed">' +
             '<span class="red-line">不正解！</span><br>' +
-            `<div id="No' +(count+1)+'CommentFalse">${comment[count]}</div>` +
+            '<div id="No' +(count+1)+'CommentFalse"></div>' +
         '</div><br>' +
         '</div>';
 

@@ -821,14 +821,6 @@ main {
     margin: 0 auto;
 }
 
-.step_content img{
-    border-radius: 10px;
-}
-
-.timeline li div img {
-    border-radius: 10px;
-}
-
 #step_img0{
     display: block;
     width: 50rem;
@@ -844,7 +836,6 @@ main {
     /* height: 100%; */
     padding: 1.5rem 0;
     box-sizing: border-box;
-    border-radius: 10px;
 }
 
 .step_sentence h1{
@@ -993,7 +984,7 @@ main {
 .logo{
     height: 13rem;
     width: 13rem;
-    border-radius: 13rem;
+    : 13rem;
     background-color: white;
 }
 

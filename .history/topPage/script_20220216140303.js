@@ -109,7 +109,7 @@ for(let count = 0; count < 3; count++){
         '</div>' +
         '<div class="nothing" id="No' +(count+1)+'CommentRed">' +
             '<span class="red-line">不正解！</span><br>' +
-            `<div id="No' +(count+1)+'CommentFalse">${comment[count]}</div>` +
+            '<div id="No' +(count+1)+'CommentFalse">${}</div>' +
         '</div><br>' +
         '</div>';
 

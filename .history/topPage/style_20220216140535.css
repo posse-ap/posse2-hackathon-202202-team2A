@@ -1908,13 +1908,13 @@ a.btn--limegreen.btn--cubic:hover{
     height: 1.34cm;
     margin: 5px auto;
     font-size: 16px;
-    background-color: #BCD5AC;
+    background-color: #FFFFFF;
     color: #000;
     border-width: 0.001px;
     border-color: #ccc;
     box-shadow: 0 2px 5px 0 #ccc;
     box-sizing: border-box;
-    text-align: center;
+    text-align: c;
     margin: 0.5rem 0;
     border-radius: 3rem;
 }
@@ -1943,7 +1943,7 @@ a.btn--limegreen.btn--cubic:hover{
     height: 1.34cm;
     margin: 5px auto;
     font-size: 16px;
-    background-color: #DA6B64;
+    background-color: #FF5128;
     color: #fff;
     border-width: 0.001px;
     border-color: #ccc;
@@ -1966,10 +1966,6 @@ a.btn--limegreen.btn--cubic:hover{
     line-height: 2.4em;
     border-radius: 3rem;
 }
-
-/* .comment div{
-    font-size: 2rem;
-} */
 
 .blue-line {
     font-size: 16px;
