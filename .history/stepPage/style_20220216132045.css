@@ -776,6 +776,7 @@ main {
 
 .timeline li{
     padding-left: 5rem;
+    padding-top: 15rem;
 }
 
 .timeline{
@@ -857,11 +858,6 @@ main {
     width: 7rem !important;
     height: 7rem !important;
     border-radius: 100px;
-    webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all 1s;
 }
 
 .voice_img2{
@@ -948,7 +944,7 @@ main {
     background: #BCD5AC;
     /* border-top-left-radius: 1000px 200px;
     border-top-right-radius: 1000px 200px; */
-    height: 97rem;
+    height: 95rem;
     margin-left: -100px;
     margin-right: -100px;
     padding-left: 100px;
@@ -1545,81 +1541,15 @@ main {
     }
 }
 
-
+@media screen and (min-width:1024){
     .timeline{
         width: 22%;
-        
-}
-
-.scroll-fade-side2 h2 {
-    left: -48rem;
+    }
 }
 
 
 @media screen and (min-width:10px) and (max-width:1024px) {
-  
-        .timeline{
-            width: 100%;
-        }
-}
-
-
-.scroll {
-    height: 7vh;
-    width: 4vw;
-}
-
-
-.scroll {
-    height: 7vh;
-    width: 3vw;
-    border: 2px solid black;
-    margin: 0 auto;
-    border-radius: 30vw;
-    cursor: pointer;
-    position: relative;
-    z-index: 5;
-}
-
-.scroll::before, .scroll::after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    border: 2px solid black;
-    height: 10px;
-    width: 10px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    border-top: transparent;
-    border-left: transparent;
-    animation: scroll 1s ease-in-out infinite;
-    z-index: 5;
-}
-
-.scroll::after {
-    top: 30%;
-}
-
-.section{
-    padding-top: 3rem;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    60% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        top: 90%;
+    {
+        ti
     }
 }
-

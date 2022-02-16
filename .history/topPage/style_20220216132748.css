@@ -367,7 +367,8 @@ h3 {
     margin: 0 auto;
     border-radius: 30vw;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 50rem;
 }
 
 .scroll::before, .scroll::after {

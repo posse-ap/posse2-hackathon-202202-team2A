@@ -2386,3 +2386,6 @@ a.btn--limegreen.btn--cubic:hover{
         top: 7rem;
     }
 }
+
+@media screen and (min-width:360px) and (max-width:361px) {
+}

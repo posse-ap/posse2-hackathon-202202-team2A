@@ -1620,6 +1620,7 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width:380px) and (max-width:420px) { 
     .compare_section{
         height: 100rem;
@@ -1636,7 +1637,7 @@ a.btn--limegreen.btn--cubic:hover{
     .compare_section{
         height: 100rem;
     }
-}
+
 /* countdown */
 
 
@@ -1661,6 +1662,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 .day, .hour, .minute, .second {
     font-size: 3rem;
+>>>>>>> 2b68758cc124749333af2eedbb4e8d70ac5417d7
 }
 
 /* ふったー */

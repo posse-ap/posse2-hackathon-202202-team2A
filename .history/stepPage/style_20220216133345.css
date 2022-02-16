@@ -776,6 +776,7 @@ main {
 
 .timeline li{
     padding-left: 5rem;
+    padding-top: 15rem;
 }
 
 .timeline{
@@ -857,11 +858,6 @@ main {
     width: 7rem !important;
     height: 7rem !important;
     border-radius: 100px;
-    webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all 1s;
 }
 
 .voice_img2{

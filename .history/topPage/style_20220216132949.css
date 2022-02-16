@@ -367,7 +367,8 @@ h3 {
     margin: 0 auto;
     border-radius: 30vw;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    z-index: 5;
 }
 
 .scroll::before, .scroll::after {
@@ -382,6 +383,7 @@ h3 {
     border-top: transparent;
     border-left: transparent;
     animation: scroll 1s ease-in-out infinite;
+    z-index: 5;
 }
 
 .scroll::after {

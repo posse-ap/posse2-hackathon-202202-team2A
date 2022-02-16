@@ -2386,3 +2386,11 @@ a.btn--limegreen.btn--cubic:hover{
         top: 7rem;
     }
 }
+
+@media screen and (min-width:1024px) {
+    
+}
+
+.timeline{
+    width: 20% !important;
+}

@@ -1636,7 +1636,7 @@ a.btn--limegreen.btn--cubic:hover{
     .compare_section{
         height: 100rem;
     }
-}
+
 /* countdown */
 
 
@@ -1661,6 +1661,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 .day, .hour, .minute, .second {
     font-size: 3rem;
+
 }
 
 /* ふったー */
