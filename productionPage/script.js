@@ -78,3 +78,5 @@ function reset_board() {
 })();
 
 cards.forEach( card => card.addEventListener("click", flipCard)) 
+
+
