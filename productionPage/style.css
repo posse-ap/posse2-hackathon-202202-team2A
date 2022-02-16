@@ -719,6 +719,43 @@ h3 {
     }
 }
 
+
+.buttonl a {
+    display: inline-block;
+    width: 80%;
+    padding: 1em;
+    background-color: #da6b64; /* 背景色 */
+    box-shadow: 0 5px 0 #e3364a; /* 影の太さ・色 */
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; /* 文字の下線を消す */
+    font-size: 2rem;
+}
+
+.buttonl a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.end {
+    margin-top: 5vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.end h1 {
+    margin: 10vh 0;
+    font-size: 3rem;
+    line-height: 10vh;
+}
+
+
+
+
+
+
+
 /* ふったー */
 .footer {
     background-color: grey;
