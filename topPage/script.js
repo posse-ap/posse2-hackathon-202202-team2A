@@ -39,7 +39,7 @@ const logo = document.querySelector('.top_logo');
 
 const tl = new TimelineMax();
 
-tl.fromTo(image, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
+tl.fromTo(image, 1, {height: "0%"}, {height: "90%", ease: Power2.easeInOut})
 .fromTo(image, 1.2, {width: "100%"}, {width: "70%", ease: Power2.easeInOut})
 .fromTo(content, 0.5, { opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
 .fromTo(logo, 0.5, { opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")

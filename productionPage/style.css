@@ -311,7 +311,6 @@ h3 {
     }
 }
 
-/* top view  */
 /* トップビュー */
 
 .top_section {
@@ -483,6 +482,27 @@ h3 {
 
 /* 見出し */
 
+.first_section {
+    background-color: #bcd5ac;
+}
+
+.first_container {
+    padding: 4vh;
+}
+
+.first_text {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 3em;
+}
+
+.first_text_head {
+    font-size: 2rem;
+}
 
 /* timeline */
 
@@ -637,7 +657,7 @@ h3 {
 
 .memory_game {
     width: 80vw;
-    height: 90vh;
+    height: 93vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -647,7 +667,7 @@ h3 {
 
 
 .memory_card {
-    width: calc(16.666% - 0.4vw);
+    width: calc(20% - 0.4vw);
     height: calc(50% - 0.4vw);
     margin: 0.2vw;
     position: relative;
