@@ -79,13 +79,9 @@ setInterval(countdown, 1000);
 let No1Selection = ['たかなわ','たかわ','こうわ']
 let No2Selection = ['かめいど','かめど','かめと']
 let No3Selection = ['こうじまち','かゆまち','おかとまち']
-let No4Selection = ['おなりもん','おかどもん','ごせいもん']
-let No5Selection = ['とどりき','たたら','たたりき']
-let Selections   = [No1Selection,No2Selection,No3Selection,No4Selection,No5Selection]
+let Selections   = [No1Selection,No2Selection,No3Selection]
 
-
-
-                //ボタンシャッフルのための配列
+//ボタンシャッフルのための配列
 let button = ['0','1','2']
 
 // 本文
