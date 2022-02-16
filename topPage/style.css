@@ -1621,6 +1621,32 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
+/* countdown */
+
+
+.countdown {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown h1 {
+    font-size: 5rem;
+    margin-bottom: 3%;
+}
+
+.countdown_time {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+}
+
 /* ふったー */
 .footer {
     background-color: grey;

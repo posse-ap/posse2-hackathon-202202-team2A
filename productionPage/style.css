@@ -656,7 +656,7 @@ h3 {
 }
 
 .memory_game {
-    width: 80vw;
+    width: 70vw;
     height: 93vh;
     margin: auto;
     display: flex;
@@ -719,64 +719,6 @@ h3 {
     }
 }
 
-
-
-@media screen and (max-width:540px) {
-    .footer_box {
-        display: block;
-        height: 20rem;
-        margin:  20rem 0;
-        right: -5%;
-        width: 90%;
-    }
-
-    .footer_box1{
-        margin-left: 0;
-    }
-    
-
-    .footer_official_box label p{
-        font-size: 7rem;
-    }
-
-    .footer_page_in_site a{
-        font-size: 5rem;
-        display: block;
-    }
-
-    .footer_page_in_site{
-        display: block;
-        line-height: 7rem;
-    }
-
-    .footer{
-        height: 70rem;
-    }
-
-    .SNS{
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .SNS p{
-        margin-left: 0;
-        display: block;
-        width: 50rem;
-        margin: 3rem auto;
-        font-size: 7rem;
-        white-space: nowrap
-    }
-
-    .SNS_box{
-        width: 100%;
-    }
-
-    .SNS_box a img {
-        width: 7rem;
-        height: 7rem;
-    }
-}
-
 /* ふったー */
 .footer {
     background-color: grey;
@@ -804,6 +746,10 @@ h3 {
 .footer_official_box label p:hover {
     opacity: 0.4;
     transform: translate(0, -5px);
+}
+
+.footer_official_box a {
+    text-decoration: none;
 }
 
 .footer_page_in_site a {
@@ -871,6 +817,7 @@ h3 {
 
 .footer_box1{
     margin-left: 5rem;
+    text-align: center;
 }
 
 .SNS_box{width: 250%;}
@@ -882,6 +829,7 @@ h3 {
 
     .footer_box1{
         margin-left: 0;
+        text-align: center;
     }
     
 
@@ -919,6 +867,7 @@ h3 {
     
     .footer_official_box label p{
         font-size: 4rem;
+        text-align: center;
     }
 
     .SNS_box a img {
@@ -926,3 +875,62 @@ h3 {
         height: 5rem;
     }
 }
+
+
+@media screen and (max-width:540px) {
+    .footer_box {
+        display: block;
+        height: 20rem;
+        margin:  20rem 0;
+        right: -5%;
+        width: 90%;
+    }
+
+    .footer_box1{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+
+    .footer_official_box label p{
+        font-size: 7rem;
+    }
+
+    .footer_page_in_site a{
+        font-size: 5rem;
+        display: block;
+    }
+
+    .footer_page_in_site{
+        display: block;
+        line-height: 7rem;
+    }
+
+    .footer{
+        height: 70rem;
+    }
+
+    .SNS{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .SNS p{
+        margin-left: 0;
+        display: block;
+        width: 50rem;
+        margin: 3rem auto;
+        font-size: 7rem;
+        white-space: nowrap
+    }
+
+    .SNS_box{
+        width: 100%;
+    }
+
+    .SNS_box a img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+

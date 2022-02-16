@@ -589,6 +589,7 @@ h3 {
     margin: 1vh 0;
     line-height: 5vh;
     font-weight: 300;
+    font-size: 1.5rem;
 }
 
 #contents_container {
@@ -691,6 +692,10 @@ h3 {
 .footer_official_box label p:hover {
     opacity: 0.4;
     transform: translate(0, -5px);
+}
+
+.footer_official_box a {
+    text-decoration: none;
 }
 
 .footer_page_in_site a {
