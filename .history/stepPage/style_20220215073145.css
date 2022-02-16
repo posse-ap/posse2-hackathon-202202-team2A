@@ -1,0 +1,77 @@
+html {
+    font-size: 1vw;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+
+/*タイムライン全体の設定*/
+.timeline {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.timeline li {
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+    list-style: none;
+    padding: 0 0 20px 0;
+}
+
+.timeline dl {
+    margin: 0 0 20px 3em;
+}
+
+.timeline dd strong {
+    display: block;
+    padding: 10px 0;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+    position: absolute;
+    left: 0.2em;
+    top: 0;
+    width: 2px;
+    /*線の太さ*/
+    height: 0;
+    /*はじめは高さを0に*/
+    background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.header{
+    z-index: 10;
+}
+
+
+section {
+    padding-top: 50rem;
+}
+
+
+

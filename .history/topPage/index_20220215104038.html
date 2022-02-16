@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/topPage/style.css" />
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header_content">
+            <div class="header_title">
+                <img src="/topPage images/S__31211608.jpg" alt="" class="header_title_img">
+            </div>
+            <!-- ①サイトタイトル -->
+            <div class="nav-wrapper header_links">
+                <!-- ②ナビゲーションメニュー -->
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/topPage/index.html">トップ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/stepPage/index.html">歩み</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/productionPage/index.html">制作物</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/freePage/index.html">インタビュー</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="burger-btn">
+                <!-- ③ハンバーガーボタン -->
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero_cont">
+        <div class="hero">
+            <img class="hero_main" src="/topPage images/test.jpg" alt="">
+        </div>
+        <div class="hero_content">
+            <h1 class="hero_headline">作り上げる喜びをともに。</h1>
+            <img class="hero_logo" src="/topPage images/logo.PNG" alt="">
+            <div class="scroll"></div>
+        </div>
+    </section>
+    <div class="slider"></div>
+
+    <section class="intro_section">
+        <div class="intro_section_back"><img src="data:image/jpeg;base64,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" alt=""></div>
+        <div class="intro_section_introduction">
+            <h2>これからPOSSE生活を送る大学一・二年生へ</h2>
+        <p>POSSE入学おめでとう！</p>
+        <p>コロナ禍でも充実した学生生活が送れるかな…<br>
+            本音で語り合える仲間がほしい<br>
+            プログラミングの学習に挫折しないか不安…<br>
+            </p>
+        <p>など、新しいコミュニティに入る不安いっぱいだと思います。<br>
+            だからこそ、POSSE②に入ってほしい！！！！
+            </p>
+        <p>POSSE②は2021年に<br class="br">大学一年生を中心に立ち上げられた<br>POSSE内の新しいコミュニティです</p>
+        <p> POSSE②には<br class="br">プログラミングの勉強も<br class="br">コミュニティ運営も<br>頑張りたい仲間がそろっています。</p>
+        <p>運営経験豊富で、意欲がある、距離が近く親身に相談できる上級生のもとで<br>プログラミングを学んでみませんか。</p>
+        </div>
+
+        <div class="line-add-container">
+        <a class="btn btn-c btn--limegreen btn--cubic" href="https://docs.google.com/forms/d/1ORyh9wI3Cvl8ZOhT9qvZ0fhUsKa84D5LCKIpqRM9Kww/edit?usp=sharing">"POSSE②希望フォームは"<span>こちら</span></a>
+        </div>
+        <div class="scroll scroll2"></div>
+        <p class="section_question">そもそもPOSSEって何?</p>
+    </section>
+
+    <section class="section2">
+        <h2>POSSEとは？</h2>
+        <div class="section2_content">
+            <img src="/topPage images/両輪.png" alt="">
+            <p>「POSSE(ポッセ)」とはプログラミングと人格にフォーカスした<br>プログラミング学習コミュニティです。<br>
+                プロのエンジニアが作成したカリキュラムをもとに、<br>未経験からチーム学習・チーム開発を行い技術の習得と実践経験を積んでいきます。<br>
+                さらに、ワークショップなどを通して人格について議論し、<br>「なぜそう思うのか？」と考えを深掘りすることで、人格成長を目指します。
+            </p>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="section4_content1">
+            <h2>POSSEに入ったのはいいけど、POSSE②って...？</h2>
+            <p>POSSEにはPOSSE①とPOSSE②があります。もともとPOSSEは一つしかなかったのですが、昨年2.0期生の数人が独立し、POSSE②を立ち上げました。
+            </p>
+        </div>
+        <div class="section4_content2">
+            <h2>なぜ分かれたの？</h2>
+            <p>人数が多くなると、機会が減ってしまう。
+                POSSEを機会提供の場にしたいという理念から一つのPOSSEに人数制限を設け、上限に達したら新しいPOSSEグループを分けることになりました。
+                </p>
+        </div>
+    </section>
+
+        <section class="section3">
+            <h2>POSSEとは</h2>
+            <p>常に挑戦し続ける私たちのことを<br>
+                より深く知ってもらうために。</p>
+            <div class="section3_cards">
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>歩み</h3>
+                </div>
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>制作物</h3>
+                </div>
+                <div class="section3_card">
+                    <img src="/topPage images/S__31211608.jpg" alt="">
+                    <h3>インタビュー</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+            <h2>よくある質問にクイズ形式で答えるよ</h2>
+            <div id="section_quiz">
+            </div>
+            <div>
+                <p> 上記のようなクイズならPOSSE入学後2ヶ月以内には作れるようになるよ！！！</p>
+            </div>
+        </section>
+
+
+    <footer class="footer">
+        <div class='footer_box'>
+            <div class="footer_box1">
+                <div class='footer_official_box'>
+                    <label for="logo"><p>POSSE</p></label>
+                    <!-- <a id='logo'  href="https://posse.anti-pattern.co.jp/"><img class='posse_logo_footer' src="img\posseLogo.png" alt="ポッセロゴ"></a> -->
+                </div>
+                <div class='footer_other_box'>
+                    <div class='footer_page_in_site'>
+                        <a href="/topPage/index.html">トップ</a>
+                        <a href="/stepPage/index.html">歩み</a>
+                        <a href="/productionPage/index.html">制作物</a>
+                        <a href="/freePage/index.html">インタビュー</a>
+                    </div>
+                </div>
+            </div>
+            <div class='SNS'>
+                <p>各種ＳＮＳ</p>
+                <div class='SNS_box'>
+                    <a href=""><img src="/topPage images/LINE.png" alt=""></a>
+                    <a href="https://instagram.com/posse_programming?utm_medium=copy_link"><img src="/topPage images/instagram2.png" alt="instagram"></a>
+                    <a href="https://twitter.com/posse_program?s=20"><img src="/topPage images/twitter2.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/topPage/script.js"></script>
+</body>
+
+</html>
