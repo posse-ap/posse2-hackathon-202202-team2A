@@ -408,6 +408,10 @@ main {
     transform: translate(0, -5px);
 }
 
+.footer_official_box a {
+    text-decoration: none;
+}
+
 .footer_page_in_site a {
     color: black;
     text-decoration: none;
