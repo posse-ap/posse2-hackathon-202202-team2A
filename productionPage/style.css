@@ -311,7 +311,6 @@ h3 {
     }
 }
 
-/* top view  */
 /* トップビュー */
 
 .top_section {
@@ -483,6 +482,27 @@ h3 {
 
 /* 見出し */
 
+.first_section {
+    background-color: #bcd5ac;
+}
+
+.first_container {
+    padding: 4vh;
+}
+
+.first_text {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 3em;
+}
+
+.first_text_head {
+    font-size: 2rem;
+}
 
 /* timeline */
 
@@ -636,8 +656,8 @@ h3 {
 }
 
 .memory_game {
-    width: 80vw;
-    height: 90vh;
+    width: 70vw;
+    height: 93vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -647,7 +667,7 @@ h3 {
 
 
 .memory_card {
-    width: calc(16.666% - 0.4vw);
+    width: calc(20% - 0.4vw);
     height: calc(50% - 0.4vw);
     margin: 0.2vw;
     position: relative;
@@ -699,64 +719,6 @@ h3 {
     }
 }
 
-
-
-@media screen and (max-width:540px) {
-    .footer_box {
-        display: block;
-        height: 20rem;
-        margin:  20rem 0;
-        right: -5%;
-        width: 90%;
-    }
-
-    .footer_box1{
-        margin-left: 0;
-    }
-    
-
-    .footer_official_box label p{
-        font-size: 7rem;
-    }
-
-    .footer_page_in_site a{
-        font-size: 5rem;
-        display: block;
-    }
-
-    .footer_page_in_site{
-        display: block;
-        line-height: 7rem;
-    }
-
-    .footer{
-        height: 70rem;
-    }
-
-    .SNS{
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .SNS p{
-        margin-left: 0;
-        display: block;
-        width: 50rem;
-        margin: 3rem auto;
-        font-size: 7rem;
-        white-space: nowrap
-    }
-
-    .SNS_box{
-        width: 100%;
-    }
-
-    .SNS_box a img {
-        width: 7rem;
-        height: 7rem;
-    }
-}
-
 /* ふったー */
 .footer {
     background-color: grey;
@@ -784,6 +746,10 @@ h3 {
 .footer_official_box label p:hover {
     opacity: 0.4;
     transform: translate(0, -5px);
+}
+
+.footer_official_box a {
+    text-decoration: none;
 }
 
 .footer_page_in_site a {
@@ -851,6 +817,7 @@ h3 {
 
 .footer_box1{
     margin-left: 5rem;
+    text-align: center;
 }
 
 .SNS_box{width: 250%;}
@@ -862,6 +829,7 @@ h3 {
 
     .footer_box1{
         margin-left: 0;
+        text-align: center;
     }
     
 
@@ -899,6 +867,7 @@ h3 {
     
     .footer_official_box label p{
         font-size: 4rem;
+        text-align: center;
     }
 
     .SNS_box a img {
@@ -906,3 +875,62 @@ h3 {
         height: 5rem;
     }
 }
+
+
+@media screen and (max-width:540px) {
+    .footer_box {
+        display: block;
+        height: 20rem;
+        margin:  20rem 0;
+        right: -5%;
+        width: 90%;
+    }
+
+    .footer_box1{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+
+    .footer_official_box label p{
+        font-size: 7rem;
+    }
+
+    .footer_page_in_site a{
+        font-size: 5rem;
+        display: block;
+    }
+
+    .footer_page_in_site{
+        display: block;
+        line-height: 7rem;
+    }
+
+    .footer{
+        height: 70rem;
+    }
+
+    .SNS{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .SNS p{
+        margin-left: 0;
+        display: block;
+        width: 50rem;
+        margin: 3rem auto;
+        font-size: 7rem;
+        white-space: nowrap
+    }
+
+    .SNS_box{
+        width: 100%;
+    }
+
+    .SNS_box a img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
