@@ -340,7 +340,7 @@ h3 {
 }
 
 .top_content {
-    width: 30%;
+    width: 35%;
     background-color: #fff;
     position: absolute;
     top: 35%;
@@ -899,7 +899,7 @@ a.btn--limegreen.btn--cubic:hover {
         padding: 1rem 0;
         width: 100%;
         height: 100rem;
-        background-color: #f6ff5f;
+        background-color: #bcd5ac;
     }
 
     .section3 h2 {
@@ -976,7 +976,7 @@ a.btn--limegreen.btn--cubic:hover {
 
 
 .about_content p {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     color: black;
     text-align: center;
     line-height: 3rem;
@@ -1367,7 +1367,7 @@ a.btn--limegreen.btn--cubic:hover{
     padding: 1rem 0;
     width: 100%;
     height: 50rem;
-    background-color: #f6ff5f;
+    background-color: #bcd5ac;
 }
 
 .section3_cards {
@@ -1380,6 +1380,11 @@ a.btn--limegreen.btn--cubic:hover{
 .section3_card {
     width: 30%;
     cursor: pointer;
+}
+
+.section3_card a {
+    text-decoration: none;
+    color: #000;
 }
 
 .section3_card img {
@@ -1429,7 +1434,7 @@ a.btn--limegreen.btn--cubic:hover{
 /* section4  */
 
 .compare_section {
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
 .compare_data {
@@ -1442,7 +1447,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 .compare_title {
     font-size: 3rem;
-    margin: 0 0 0 2vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -1454,30 +1459,31 @@ a.btn--limegreen.btn--cubic:hover{
     text-align: center;
     font-weight: 900;
     color: #000;
+    border-radius: 10px;
 }
 
 .compare_box1 {
     position: absolute;
     left: 5%;
-    top: 25%;
+    top: 30%;
 }
 
 .compare_box2 {
     position: absolute;
     right: 5%;
-    top: 35%;
+    top: 45%;
 }
 
 .compare_box3 {
     position: absolute;
     left: 5%;
-    top: 55%;
+    top: 60%;
 }
 
 .compare_box4 {
     position: absolute;
     right: 5%;
-    top: 70%;
+    top: 75%;
 }
 
 .compare_box1:before, .compare_box2:before, .compare_box3::before, .compare_box4:before {
@@ -1538,7 +1544,16 @@ a.btn--limegreen.btn--cubic:hover{
 }
 
 .compare_table tr:nth-of-type(even) {
-    background-color: #a9a9a9;
+    background-color: #d3d3d3;
+}
+
+.compare_extra {
+    padding-top: 3vh;
+}
+
+.compare_extra p {
+    font-size: 1rem;
+    line-height: 3vh;
 }
 
 
@@ -1562,12 +1577,13 @@ a.btn--limegreen.btn--cubic:hover{
         width: 60vw;
         margin: 3vh auto;
         background: #dbffdb;
-        padding: 1%;
+        padding: 2%;
         text-align: center;
         font-weight: 900;
         color: #000;
         line-height: 3rem;
-        font-size: 1.5rem;
+        font-size: 5rem;
+        border-radius: 50%;
     }
 
     .compare_box1 {
