@@ -13,6 +13,15 @@ body {
     font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
 }
 
+.underline {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #bcd5ac 70%);
+}
+
+.underline2 {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #da6b64 70%);
+}
 
 .header_content {
     height: 90%;
@@ -609,7 +618,7 @@ h3 {
 
 
 .intro_section {
-    height: 91rem;
+    height: 80rem;
 }
 
 
@@ -621,12 +630,12 @@ h3 {
 }
 
 .intro_section div h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 4rem;
 }
 
 .intro_section div p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 3rem;
     line-height: 3.3rem;
 }
@@ -647,7 +656,7 @@ h3 {
 /* @media screen and (min-width:541px) and (max-width:1024px) {} */
 
 .intro_section {
-    height: 110rem;
+    height: 90rem;
 }
 
 @media screen and (max-width:540px) {
@@ -688,67 +697,8 @@ h3 {
 }
 
 
-.btn {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    /* position: relative; */
-    align-self: center;
-    width: 50vw;
-    margin-bottom: 46vw;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: white;
-    border-radius: 0.5rem;
-}
 
-a.btn--limegreen {
-    color: white;
-    background-color: #16af2b;
-}
 
-a.btn-c {
-    position: relative;
-    padding: 2rem 5rem 2rem 3rem;
-    border-radius: 100vh;
-    top: 85rem;
-    z-index: 5;
-}
-
-a.btn--limegreen.btn--cubic {
-    border-bottom: 1rem solid rgb(1, 122, 37);
-}
-
-.btn-copy {
-    color: skyblue;
-    font-size: 4.3vw;
-    font-weight: bold;
-    /* position: relative; */
-    margin-bottom: 0em;
-    text-align: center;
-}
-
-.line-add-container {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    margin: 7rem auto;
-    box-sizing: border-box;
-}
-
-.btn:hover {
-    background-color: #FFA500;
-    width: 50vw;
-    height: 6.8rem;
-}
-
-a.btn--limegreen.btn--cubic:hover {
-    border: 0px;
-}
 
 .scroll2 {
     top: 74%;
@@ -792,28 +742,75 @@ a.btn--limegreen.btn--cubic:hover {
     }
 }
 
-.other_section_card:hover img {
-    opacity: 0.6;
-    /* transition-duration: 0.1s; */
+
+
+/* YOSA SECTION */
+
+.yosa_section {
+    padding: 40px 0;
+    text-align: center;
+    color: #000;
+    background-color: #ffeaea;
 }
 
-.other_section h2 {
+.yosa_section h1 {
     font-size: 3rem;
     margin: 4rem;
+    color: #494949;
 }
 
-.other_section p {
-    font-size: 1.8rem;
-    margin: 3rem;
-    line-height: 3.3rem;
+.yosa_box {
+    overflow: hidden;
+    width: 95%;
+    margin: 30px auto 0 auto;
 }
 
-.other_section_card h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 1rem;
-    line-height: 3.3rem;
+.yosa_row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.yosa_step {
+    padding: 0 1vw;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 5px solid #da6b64;
+    width: 30%;
+    height: 100%;
+}
+
+.yosa_step:nth-of-type(2) {
+    margin: 0 1.5%;
+}
+
+.yosa_title {
+    margin-top: 1vh;
+    padding: 1vh;
+    background-color: #da6b64;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.yosa_body p {
+    color: #000;
+    font-weight: 600;
+    font-size: 2rem;
+    
+    line-height: 9vh;
+}
+
+
+
+
+
+
+/* YOSA END */
+
+
 
 
 @media screen and (max-width:540px) {
@@ -848,7 +845,7 @@ a.btn--limegreen.btn--cubic:hover {
         line-height: 3.3rem;
         white-space: nowrap;
     }
-}
+} */
 
 /* ABOUT SECTION */
 
@@ -866,7 +863,7 @@ a.btn--limegreen.btn--cubic:hover {
 }
 
 .about_image {
-    /* height: 80%; */
+    height: 80%;
     width: 50%;
     padding: 0;
     margin-left: 2vw;
@@ -874,13 +871,14 @@ a.btn--limegreen.btn--cubic:hover {
 
 .about_image img {
     width: 100%;
-    height: 90%;
+    height: 70%;
     object-fit: cover;
     border-radius: 7px;
 }
 
 .about_content {
     width: 44%;
+    height: 100%;
     margin-left: 1rem;
     color: #494949;/*文字色*/
     background: #fffaf4;/*背景色*/
@@ -1300,9 +1298,10 @@ a.btn--limegreen.btn--cubic:hover{
 }
 
 .other_section_card img {
-    width: 75%;
+    width: 90%;
     height: 20rem;
     border-radius: 30rem;
+    background-size: cover;
 }
 
 .other_section_card:hover h3 {
@@ -1453,13 +1452,13 @@ a.btn--limegreen.btn--cubic:hover{
 
 
 .compare_table {
-    width: 40%;
+    width: 45%;
     margin: 1vh auto;
     border-radius: 10px;
     border-spacing: 1vw;
     overflow: hidden;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: left;
 }
 
@@ -2020,10 +2019,30 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
+/* BUTTON */
+
+
+.button a {
+    display: inline-block;
+    padding: 2em 6em;
+    background-color: #da6b64; /* 背景色 */
+    box-shadow: 0 5px 0 #e3364a; /* 影の太さ・色 */
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; /* 文字の下線を消す */
+    font-size: 1.1rem;
+}
+
+.button a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
 .box {
     width: 80%;
     height: 100%;
-    margin: 5% 0 5% 10%;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -2034,21 +2053,21 @@ a.btn--limegreen.btn--cubic:hover{
     height: 80rem;
     object-fit: cover;
     filter: blur(4px);
-    height: 100rem;
+    height: 70rem;
     /* margin-top: 5em; */
-    top: 120%;
+    top: 115%;
 }
 
 
 
 .box2 {
-    top: 120%;
+    top: 115%;
     position: absolute;
     width: 80%;
-    height: 100rem;
+    height: 70rem;
     background: rgb(255, 255, 255, 0.3);
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 2rem;
     z-index: 50;
     box-sizing: border-box;
 }
@@ -2085,7 +2104,7 @@ a.btn--limegreen.btn--cubic:hover{
         height: 100rem;
         background: rgb(255, 255, 255, 0.3);
         text-align: center;
-        padding-top: 10rem;
+        padding-top: 5rem;
         z-index: 50;
         box-sizing: border-box;
     }
