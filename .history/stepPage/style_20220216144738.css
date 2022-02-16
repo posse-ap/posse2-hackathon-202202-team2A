@@ -381,7 +381,7 @@ main {
 
 /* ふったー */
 .footer {
-    background-color: gray;
+    background-color: grey;
     opacity: 0.7;
     height: 100%;
 }
@@ -1563,10 +1563,6 @@ main {
 
     .step_sentence1{
         left: 0;
-    }
-
-    .section{
-        background-color: #FFFAF4;
     }
 
     .section_start{

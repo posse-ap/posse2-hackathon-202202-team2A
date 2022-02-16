@@ -747,7 +747,7 @@ h3 {
 /* YOSA SECTION */
 
 .yosa_section {
-    padding: 3rem 0;
+    padding: 40px 0;
     text-align: center;
     color: #000;
     background-color: #ffeaea;
@@ -1373,7 +1373,7 @@ a.btn--limegreen.btn--cubic:hover{
 /* section4  */
 
 .compare_section {
-    padding: 5rem 0;
+    padding: 3% 0;
 }
 
 .compare_data {
@@ -1625,7 +1625,6 @@ a.btn--limegreen.btn--cubic:hover{
     margin-top: 5vh;
     margin: 0 auto;
     text-align: center;
-    padding-top: 5rem;
 }
 
 .end h1 {
@@ -1667,8 +1666,7 @@ a.btn--limegreen.btn--cubic:hover{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 30rem;
-    padding-bottom: 3rem;
+    height: ;
 }
 
 .countdown h1 {
@@ -1690,7 +1688,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 /* ふったー */
 .footer {
-    background-color: gray;
+    background-color: grey;
     opacity: 0.7;
     height: 100%;
 }
@@ -1703,6 +1701,7 @@ a.btn--limegreen.btn--cubic:hover{
     padding: 6rem 0 0 0;
     position: relative;
     right: -23%;
+    margin-top: 27rem;
 }
 
 .footer_official_box label p {

@@ -48,7 +48,7 @@ tl.fromTo(image, 1, {height: "0%"}, {height: "90%", ease: Power2.easeInOut})
 
 
 const countdown = () => {
-    const count_date = new Date('February 18, 2022 00:00:00').getTime();
+    const count_date = new Date('February 19, 2022 23:59:59').getTime();
     const now = new Date().getTime();
     const gap = count_date - now;
 
