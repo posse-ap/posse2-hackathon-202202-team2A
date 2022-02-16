@@ -950,8 +950,8 @@ a.btn--limegreen.btn--cubic:hover {
 }
 
 .split_section {
-    height: 50rem;
-    padding: 3rem;
+    height: 60rem;
+    padding: 1.5rem;
     background-color: #BCD5AC;
 }
 
@@ -1074,7 +1074,6 @@ a.btn--limegreen.btn--cubic:hover {
 /* ABOUT SECTION */
 
 .about_section {
-    height: 100%;
     background-color: #BCD5AC;
     padding: 5rem 0;
 }
@@ -1101,7 +1100,7 @@ a.btn--limegreen.btn--cubic:hover {
 
 .about_content {
     width: 44%;
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: #494949;/*文字色*/
     background: #fffaf4;/*背景色*/
 }
@@ -1502,7 +1501,7 @@ a.btn--limegreen.btn--cubic:hover{
 @media screen and (min-width:541px) and (max-width:1024px) { 
 
     .compare_section {
-        height: 50vh;
+        height: 110vh;
     }
 
     .compare_table {
@@ -1560,7 +1559,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 @media screen and (max-width:540px) {
     .compare_section {
-        height: 50vh;
+        height: 60vh;
     }
 
     .compare_table {
@@ -1621,6 +1620,23 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
+@media screen and (min-width:380px) and (max-width:420px) { 
+    .compare_section{
+        height: 100rem;
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:920px) { 
+    .compare_section{
+        height: 70rem;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:361px) { 
+    .compare_section{
+        height: 100rem;
+    }
+
 /* countdown */
 
 
@@ -1645,6 +1661,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 .day, .hour, .minute, .second {
     font-size: 3rem;
+
 }
 
 /* ふったー */
@@ -2157,7 +2174,7 @@ a.btn--limegreen.btn--cubic:hover{
     background: #FFFAF4;/*背景色*/
     border-radius: 10px;
     position: absolute;
-    right: 3em;
+    right: 2em;
 }
 
 .split_content h1 {
@@ -2228,6 +2245,10 @@ a.btn--limegreen.btn--cubic:hover{
     left: 0;
     top: 3rem
 }
+
+.split_section {
+    height: 90rem;
+}
 }
 
 @media screen and (max-width:540px) {
@@ -2290,7 +2311,7 @@ a.btn--limegreen.btn--cubic:hover{
 
 @media screen and (min-width:913px) and (max-width:1024px) { 
     .split_content{
-        margin: 45vh auto 0 auto;
+        margin: 47vh auto 0 auto;
     }
 }
 
