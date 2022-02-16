@@ -628,7 +628,10 @@ h3 {
     content: "\f0ca";
 }
 
-
+.contents_container ul a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 
@@ -659,8 +662,46 @@ h3 {
 
 
 
+.fly {
+    text-decoration: none;
+    color: #000;
+}
 
+.right {
+    margin-left: auto;
+}
 
+/* ending */
+
+.end {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.end h1 {
+    
+    margin: 10vh 0;
+    font-size: 3rem;
+    line-height: 10vh;
+}
+
+.buttonl a {
+    display: inline-block;
+    width: 80%;
+    padding: 1em;
+    background-color: #da6b64; /* 背景色 */
+    box-shadow: 0 5px 0 #e3364a; /* 影の太さ・色 */
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; /* 文字の下線を消す */
+    font-size: 2rem;
+}
+
+.buttonl a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
 
 
 

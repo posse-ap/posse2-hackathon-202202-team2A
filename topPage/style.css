@@ -1619,6 +1619,19 @@ a.btn--limegreen.btn--cubic:hover{
     }
 }
 
+/* ending */
+
+.end {
+    margin-top: 5vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.end h1 {
+    font-size: 3rem;
+    line-height: 10vh;
+}
+
 @media screen and (min-width:380px) and (max-width:420px) { 
     .compare_section{
         height: 100rem;
@@ -1635,12 +1648,14 @@ a.btn--limegreen.btn--cubic:hover{
     .compare_section{
         height: 100rem;
     }
+}
 
 /* countdown */
 
 
 .countdown {
     /* min-height: 100vh; */
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1648,7 +1663,7 @@ a.btn--limegreen.btn--cubic:hover{
 }
 
 .countdown h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 3%;
 }
 
@@ -1660,7 +1675,8 @@ a.btn--limegreen.btn--cubic:hover{
 
 .day, .hour, .minute, .second {
     font-size: 3rem;
-
+    margin-bottom: 0;
+    color: #da6b64;
 }
 
 /* ふったー */
@@ -2055,6 +2071,26 @@ a.btn--limegreen.btn--cubic:hover{
     box-shadow: none;
     transform: translateY(5px);
 }
+
+.buttonl a {
+    display: inline-block;
+    width: 80%;
+    padding: 1em;
+    background-color: #da6b64; /* 背景色 */
+    box-shadow: 0 5px 0 #e3364a; /* 影の太さ・色 */
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; /* 文字の下線を消す */
+    font-size: 2rem;
+}
+
+.buttonl a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+
 
 .box {
     width: 80%;
